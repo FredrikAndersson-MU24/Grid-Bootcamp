@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-color: antiquewhite;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 120px;
+  gap: 10px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: auto auto;
+  padding: 10px;
+  gap: 5px;
+  background-color: whitesmoke;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+/* one */
+.dice.dots-1 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* two */
+.dice.dots-2 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dice.dots-2 aside:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+/* three */
+.dice.dots-3 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dice.dots-3 aside:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.dice.dots-3 aside:nth-child(3) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* four */
+.dice.dots-4 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dice.dots-4 aside:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.dice.dots-4 aside:nth-child(3) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.dice.dots-4 aside:nth-child(4) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* five */
+.dice.dots-5 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dice.dots-5 aside:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.dice.dots-5 aside:nth-child(3) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.dice.dots-5 aside:nth-child(4) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.dice.dots-5 aside:nth-child(5) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* four */
+.dice.dots-6 aside:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dice.dots-6 aside:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.dice.dots-6 aside:nth-child(3) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.dice.dots-6 aside:nth-child(4) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.dice.dots-6 aside:nth-child(5) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.dice.dots-6 aside:nth-child(6) {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
