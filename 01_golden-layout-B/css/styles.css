@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: azure;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(5, 1fr);
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper header {
+  grid-area: auto / auto / span 3 / span 6;
+}
+.wrapper nav {
+  grid-area: auto / auto / span 1 / span 6;
+}
+.wrapper main {
+  grid-area: auto / auto / span 6 / span 4;
+}
+.wrapper aside {
+  grid-area: auto / auto / span 6 / span 2;
+}
+.wrapper footer {
+  grid-area: auto / auto / span 2 / span 6;
+}
