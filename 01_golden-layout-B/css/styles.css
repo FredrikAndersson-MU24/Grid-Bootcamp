@@ -21,7 +21,7 @@ footer {
 }
 
 .wrapper {
-  width: 1000px;
+  max-width: 1000px;
   height: 100%;
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(5, 1fr);
