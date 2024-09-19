@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  font-size: 2rem;
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.5fr 0.5fr 3fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+  gap: 10px;
+  margin: auto;
+  padding: 10px;
+}
+
+.wrapper header {
+  grid-area: header;
+}
+
+.wrapper nav {
+  grid-area: nav;
+}
+
+.wrapper main {
+  grid-area: main;
+}
+
+.wrapper aside {
+  grid-area: aside;
+}
+
+.wrapper footer {
+  grid-area: footer;
+}
